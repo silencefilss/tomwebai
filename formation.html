@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formation — Tom.AIWEB</title>
+  <meta name="description" content="Espace de formation Tom.AIWEB — Modules, vidéos et ressources.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="platform.css">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+</head>
+
+<body class="platform-page">
+
+  <!-- ==========================================
+       PLATFORM NAVBAR
+  ========================================== -->
+  <nav class="platform-nav" id="platform-nav">
+    <div class="platform-nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-text">Tom.AIWEB</span>
+      </a>
+      <div class="platform-nav-right">
+        <span class="member-badge" id="member-badge">
+          <span class="member-dot"></span>
+          Membre
+        </span>
+        <button class="btn-logout" id="btn-logout" title="Se déconnecter">
+          ↗ Déconnexion
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       MAIN LAYOUT: SIDEBAR + CONTENT
+  ========================================== -->
+  <div class="platform-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <h3 class="sidebar-title">📚 Modules</h3>
+        <div class="sidebar-progress">
+          <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+          <span class="progress-text" id="progress-text">0% complété</span>
+        </div>
+      </div>
+
+      <nav class="sidebar-modules" id="sidebar-modules">
+        <!-- Module 1 -->
+        <div class="sidebar-module" data-module="1">
+          <div class="module-header" data-toggle="module-1">
+            <div class="module-status" data-module-check="1"></div>
+            <span class="module-number">01</span>
+            <span class="module-name">Les bases du codage</span>
+            <span class="module-chevron">›</span>
+          </div>
+          <div class="module-lessons" id="module-1">
+            <a href="#" class="lesson-link" data-lesson="1-1" data-video="bases-html"
+              data-title="Comment fonctionne HTML">
+              <span class="lesson-check" data-check="1-1"></span>
+              <span class="lesson-title">Comment fonctionne HTML</span>
+              <span class="lesson-duration">12:00</span>
+            </a>
+            <a href="#" class="lesson-link" data-lesson="1-2" data-video="bases-css"
+              data-title="Comment fonctionne CSS">
+              <span class="lesson-check" data-check="1-2"></span>
+              <span class="lesson-title">Comment fonctionne CSS</span>
+              <span class="lesson-duration">14:30</span>
+            </a>
+            <a href="#" class="lesson-link" data-lesson="1-3" data-video="bases-js"
+              data-title="Comment fonctionne JavaScript">
+              <span class="lesson-check" data-check="1-3"></span>
+              <span class="lesson-title">Comment fonctionne JavaScript</span>
+              <span class="lesson-duration">18:00</span>
+            </a>
+            <a href="#" class="lesson-link" data-lesson="1-4" data-video="bases-react"
+              data-title="Introduction à React">
+              <span class="lesson-check" data-check="1-4"></span>
+              <span class="lesson-title">Introduction à React</span>
+              <span class="lesson-duration">15:45</span>
+            </a>
+            <a href="#" class="lesson-link" data-lesson="1-5" data-video="bases-node"
+              data-title="Introduction à Node.js">
+              <span class="lesson-check" data-check="1-5"></span>
+              <span class="lesson-title">Introduction à Node.js</span>
+              <span class="lesson-duration">13:20</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Module 2 -->
+        <div class="sidebar-module" data-module="2">
+          <div class="module-header" data-toggle="module-2">
+            <div class="module-status" data-module-check="2"></div>
+            <span class="module-number">02</span>
+            <span class="module-name">Créer un site 100% avec l'IA</span>
+            <span class="module-chevron">›</span>
+          </div>
+          <div class="module-lessons" id="module-2">
+            <a href="#" class="lesson-link" data-lesson="2-1" data-video="ia-antigravity"
+              data-title="Présentation d'Antigravity">
+              <span class="lesson-check" data-check="2-1"></span>
+              <span class="lesson-title">Présentation d'Antigravity</span>
+              <span class="lesson-duration">10:00</span>
+            </a>
+            <a href="#" class="lesson-link" data-lesson="2-2" data-video="ia-install"
+              data-title="Installer et configurer l'outil">
+              <span class="lesson-check" data-check="2-2"></span>
+              <span class="lesson-title">Installer et configurer l'outil</span>
+              <span class="lesson-duration">8:30</span>
+            </a>
+            <a href="#" class="lesson-link" data-lesson="2-3" data-video="ia-premier-site"
+              data-title="Générer son premier site complet">
+              <span class="lesson-check" data-check="2-3"></span>
+              <span class="lesson-title">Générer son premier site complet</span>
+              <span class="lesson-duration">25:00</span>
+            </a>
+            <a href="#" class="lesson-link" data-lesson="2-4" data-video="ia-prompts"
+              data-title="Prompt engineering : bien formuler ses demandes">
+              <span class="lesson-check" data-check="2-4"></span>
+              <span class="lesson-title">Prompt engineering : bien formuler ses demandes</span>
+              <span class="lesson-duration">16:45</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Module 3 -->
+        <div class="sidebar-module" data-module="3">
+          <div class="module-header" data-toggle="module-3">
+            <div class="module-status" data-module-check="3"></div>
+            <span class="module-number">03</span>
+            <span class="module-name">Corriger & perfectionner le site</span>
+            <span class="module-chevron">›</span>
+          </div>
+          <div class="module-lessons" id="module-3">
+            <a href="#" class="lesson-link" data-lesson="3-1" data-video="fix-erreurs"
+              data-title="Comprendre les erreurs de l'IA">
+              <span class="lesson-check" data-check="3-1"></span>
+              <span class="lesson-title">Comprendre les erreurs de l'IA</span>
+              <span class="lesson-duration">11:00</span>
+            </a>
+            <a href="#" class="lesson-link" data-lesson="3-2" data-video="fix-reprompt"
+              data-title="Corriger en re-promptant efficacement">
+              <span class="lesson-check" data-check="3-2"></span>
+              <span class="lesson-title">Corriger en re-promptant efficacement</span>
+              <span class="lesson-duration">18:30</span>
+            </a>
+            <a href="#" class="lesson-link" data-lesson="3-3" data-video="fix-responsive"
+              data-title="Rendre le site responsive (mobile/tablette)">
+              <span class="lesson-check" data-check="3-3"></span>
+              <span class="lesson-title">Rendre le site responsive (mobile/tablette)</span>
+              <span class="lesson-duration">20:15</span>
+            </a>
+            <a href="#" class="lesson-link" data-lesson="3-4" data-video="fix-polish"
+              data-title="Finitions et polish final">
+              <span class="lesson-check" data-check="3-4"></span>
+              <span class="lesson-title">Finitions et polish final</span>
+              <span class="lesson-duration">14:00</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Module 4 -->
+        <div class="sidebar-module" data-module="4">
+          <div class="module-header" data-toggle="module-4">
+            <div class="module-status" data-module-check="4"></div>
+            <span class="module-number">04</span>
+            <span class="module-name">Montrer le site au client (gratuit)</span>
+            <span class="module-chevron">›</span>
+          </div>
+          <div class="module-lessons" id="module-4">
+            <a href="#" class="lesson-link" data-lesson="4-1" data-video="github-compte"
+              data-title="Créer un compte GitHub">
+              <span class="lesson-check" data-check="4-1"></span>
+              <span class="lesson-title">Créer un compte GitHub</span>
+              <span class="lesson-duration">6:00</span>
+            </a>
+            <a href="#" class="lesson-link" data-lesson="4-2" data-video="github-pages"
+              data-title="Déployer avec GitHub Pages">
+              <span class="lesson-check" data-check="4-2"></span>
+              <span class="lesson-title">Déployer avec GitHub Pages</span>
+              <span class="lesson-duration">12:30</span>
+            </a>
+            <a href="#" class="lesson-link" data-lesson="4-3" data-video="github-partage"
+              data-title="Partager le lien au client">
+              <span class="lesson-check" data-check="4-3"></span>
+              <span class="lesson-title">Partager le lien au client</span>
+              <span class="lesson-duration">5:45</span>
+            </a>
+            <a href="#" class="lesson-link" data-lesson="4-4" data-video="github-maj"
+              data-title="Mettre à jour le site déployé">
+              <span class="lesson-check" data-check="4-4"></span>
+              <span class="lesson-title">Mettre à jour le site déployé</span>
+              <span class="lesson-duration">8:15</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Module 5 -->
+        <div class="sidebar-module" data-module="5">
+          <div class="module-header" data-toggle="module-5">
+            <div class="module-status" data-module-check="5"></div>
+            <span class="module-number">05</span>
+            <span class="module-name">Héberger pour de vrai (IONOS)</span>
+            <span class="module-chevron">›</span>
+          </div>
+          <div class="module-lessons" id="module-5">
+            <a href="#" class="lesson-link" data-lesson="5-1" data-video="ionos-domaine"
+              data-title="Acheter un nom de domaine">
+              <span class="lesson-check" data-check="5-1"></span>
+              <span class="lesson-title">Acheter un nom de domaine</span>
+              <span class="lesson-duration">9:00</span>
+            </a>
+            <a href="#" class="lesson-link" data-lesson="5-2" data-video="ionos-config"
+              data-title="Configurer l'hébergement IONOS">
+              <span class="lesson-check" data-check="5-2"></span>
+              <span class="lesson-title">Configurer l'hébergement IONOS</span>
+              <span class="lesson-duration">14:30</span>
+            </a>
+            <a href="#" class="lesson-link" data-lesson="5-3" data-video="ionos-mise-en-ligne"
+              data-title="Mettre le site en ligne">
+              <span class="lesson-check" data-check="5-3"></span>
+              <span class="lesson-title">Mettre le site en ligne</span>
+              <span class="lesson-duration">11:45</span>
+            </a>
+            <a href="#" class="lesson-link" data-lesson="5-4" data-video="ionos-lier"
+              data-title="Lier domaine et hébergement">
+              <span class="lesson-check" data-check="5-4"></span>
+              <span class="lesson-title">Lier domaine et hébergement</span>
+              <span class="lesson-duration">10:00</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Module 6 -->
+        <div class="sidebar-module" data-module="6">
+          <div class="module-header" data-toggle="module-6">
+            <div class="module-status" data-module-check="6"></div>
+            <span class="module-number">06</span>
+            <span class="module-name">Trouver des clients</span>
+            <span class="module-chevron">›</span>
+          </div>
+          <div class="module-lessons" id="module-6">
+            <a href="#" class="lesson-link" data-lesson="6-1" data-video="clients-gmaps"
+              data-title="La méthode Google Maps">
+              <span class="lesson-check" data-check="6-1"></span>
+              <span class="lesson-title">La méthode Google Maps</span>
+              <span class="lesson-duration">15:00</span>
+            </a>
+            <a href="#" class="lesson-link" data-lesson="6-2" data-video="clients-identifier"
+              data-title="Identifier les commerces sans site web">
+              <span class="lesson-check" data-check="6-2"></span>
+              <span class="lesson-title">Identifier les commerces sans site web</span>
+              <span class="lesson-duration">12:30</span>
+            </a>
+            <a href="#" class="lesson-link" data-lesson="6-3" data-video="clients-liste"
+              data-title="Construire sa liste de prospects">
+              <span class="lesson-check" data-check="6-3"></span>
+              <span class="lesson-title">Construire sa liste de prospects</span>
+              <span class="lesson-duration">10:45</span>
+            </a>
+            <a href="#" class="lesson-link" data-lesson="6-4" data-video="clients-qualifier"
+              data-title="Qualifier et prioriser ses leads">
+              <span class="lesson-check" data-check="6-4"></span>
+              <span class="lesson-title">Qualifier et prioriser ses leads</span>
+              <span class="lesson-duration">9:15</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Module 7 -->
+        <div class="sidebar-module" data-module="7">
+          <div class="module-header" data-toggle="module-7">
+            <div class="module-status" data-module-check="7"></div>
+            <span class="module-number">07</span>
+            <span class="module-name">Démarcher & closer</span>
+            <span class="module-chevron">›</span>
+          </div>
+          <div class="module-lessons" id="module-7">
+            <a href="#" class="lesson-link" data-lesson="7-1" data-video="closing-contact"
+              data-title="Le premier contact (script d'approche)">
+              <span class="lesson-check" data-check="7-1"></span>
+              <span class="lesson-title">Le premier contact (script d'approche)</span>
+              <span class="lesson-duration">14:00</span>
+            </a>
+            <a href="#" class="lesson-link" data-lesson="7-2" data-video="closing-offre"
+              data-title="Présenter son offre">
+              <span class="lesson-check" data-check="7-2"></span>
+              <span class="lesson-title">Présenter son offre</span>
+              <span class="lesson-duration">16:30</span>
+            </a>
+            <a href="#" class="lesson-link" data-lesson="7-3" data-video="closing-techniques"
+              data-title="Techniques de closing">
+              <span class="lesson-check" data-check="7-3"></span>
+              <span class="lesson-title">Techniques de closing</span>
+              <span class="lesson-duration">19:00</span>
+            </a>
+            <a href="#" class="lesson-link" data-lesson="7-4" data-video="closing-objections"
+              data-title="Gérer les objections et signer">
+              <span class="lesson-check" data-check="7-4"></span>
+              <span class="lesson-title">Gérer les objections et signer</span>
+              <span class="lesson-duration">13:45</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </aside>
+
+    <!-- MOBILE SIDEBAR TOGGLE -->
+    <button class="sidebar-toggle" id="sidebar-toggle" title="Menu modules">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <!-- MAIN CONTENT -->
+    <main class="platform-main" id="platform-main">
+
+      <!-- WELCOME STATE (no video selected) -->
+      <div class="welcome-state" id="welcome-state">
+        <div class="welcome-inner">
+          <div class="welcome-icon">🎯</div>
+          <h1 class="welcome-title">Bienvenue dans l'espace formation</h1>
+          <p class="welcome-text">
+            Sélectionnez un module dans le menu à gauche pour commencer à apprendre.
+            Suivez les modules dans l'ordre pour une progression optimale.
+          </p>
+          <div class="welcome-stats">
+            <div class="welcome-stat">
+              <span class="ws-number">7</span>
+              <span class="ws-label">Modules</span>
+            </div>
+            <div class="welcome-stat">
+              <span class="ws-number">29</span>
+              <span class="ws-label">Leçons</span>
+            </div>
+            <div class="welcome-stat">
+              <span class="ws-number">8h+</span>
+              <span class="ws-label">De contenu</span>
+            </div>
+          </div>
+          <button class="btn-start-learning" id="btn-start">
+            ▶ Commencer la première leçon
+          </button>
+        </div>
+      </div>
+
+      <!-- VIDEO PLAYER STATE -->
+      <div class="video-state" id="video-state" style="display: none;">
+        <!-- Breadcrumb -->
+        <div class="video-breadcrumb" id="video-breadcrumb">
+          <span class="bc-module">Module 1</span>
+          <span class="bc-sep">›</span>
+          <span class="bc-lesson">Bienvenue dans la formation</span>
+        </div>
+
+        <!-- Video Player -->
+        <div class="video-container">
+          <div class="video-player" id="video-player">
+            <!-- Placeholder since no real videos exist yet -->
+            <div class="video-placeholder" id="video-placeholder">
+              <div class="vp-icon">▶</div>
+              <h3 class="vp-title" id="vp-title">Bienvenue dans la formation</h3>
+              <p class="vp-text">La vidéo sera disponible prochainement</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video info -->
+        <div class="video-info">
+          <div class="video-info-left">
+            <h2 class="video-title" id="video-title">Bienvenue dans la formation</h2>
+            <p class="video-module-label" id="video-module-label">Module 1 — Introduction & Mindset</p>
+          </div>
+          <div class="video-info-right">
+            <button class="btn-mark-complete" id="btn-mark-complete">
+              <span class="bmc-icon">✓</span>
+              Marquer comme terminé
+            </button>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="video-nav">
+          <button class="btn-prev-lesson" id="btn-prev" disabled>
+            ← Leçon précédente
+          </button>
+          <button class="btn-next-lesson" id="btn-next">
+            Leçon suivante →
+          </button>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="platform.js"></script>
+</body>
+
+</html>
